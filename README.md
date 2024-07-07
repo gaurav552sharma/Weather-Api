@@ -30,9 +30,7 @@ Example:
 
 
 ## Configuration
-I have already created the firebase configuration for my database just Use your own weather Api key from OpenWeatherMap
-
-1. Create a `.env` file in the root directory and add api key by the name REACT_APP_WEATHER_API_KEY
+I have already created the firebase configuration for my database and the weather api key , You can directly use the project
 
 
 ## Usage
