@@ -10,8 +10,7 @@ Provide a brief overview of your project, including its purpose and key features
 - [Usage](#usage)
 - [Deployment](#deployment)
 - [Built With](#built-with)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Prerequisites
 List all prerequisites and dependencies needed to run your project locally. Include links to where each dependency can be downloaded or installed.
