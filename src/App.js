@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { Container } from '@mui/material';
+import Home from './pages/Home';
+import Register from './components/Register';
+import Login from './components/Login';
+import Logout from './components/Logout';
+import { useAuth } from './context/AuthContext';
 
-function App() {
+const App = () => {
+  const { currentUser } = useAuth();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container sx={{width:'100%'}}>
+      <Routes>
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<Logout />} />
+        <Route
+          path="/"
+          element={currentUser ? <Home /> : <Navigate to="/login" replace />}
+        />
+      </Routes>
+    </Container>
   );
-}
+};
 
 export default App;
