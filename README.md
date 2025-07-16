@@ -1,7 +1,7 @@
 # Weather API Project with Firebase and Create-React-App
 
 ## Overview
-Provide a brief overview of your project, including its purpose and key features.
+The Project is hosted on : https://weather-app-dde43.web.app/
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
